@@ -1,0 +1,22 @@
+This repository contains the files for two versions to the game, Simon Says.
+To be used with a raspberry pi with the appropriate breadboard circuit attached.
+
+simon_says.py: Can be run using ipython to begin playing the game. 
+
+simon_says.sh: A shell version of the game which was used in the testing of 
+the game logic.
+
+Game instructions:
+  The game will begin by flashing all the lights to signify the start of the game
+  A light of a specific color will be flashed to the player
+  The player will echo the same light back
+  The game will continuously add a random light to the sequence such that 
+    the user must remember increasingly longer sequences.
+  If you fail, the lights will flash and a score will be printed to the console
+
+Game logic:
+  We implement the game as a while loop that maintains game state. While we 
+  are still playing, the game functions between two game loops. The first
+  reads the current sequence of lights to displays and flashes them in oder.
+  The second will wait for user input and ensure that the player is pushing
+  the correct buttons throughout the sequence. 
