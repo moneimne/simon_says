@@ -130,4 +130,4 @@ while gamestate == 1:
 			restart()
 			break
 
-		score = score + 1
+	score = score + 1
